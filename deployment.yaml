@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flaskdemo
+  name: flaskdemo1
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: flaskdemo
+      app: flaskdemo1
   template:
     metadata:
       labels:
-        app: flaskdemo
+        app: flaskdemo1
     spec:
       containers:
-      - name: flaskdemo
+      - name: flaskdemo1
         image: linuxgray039/test:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 6000
 
