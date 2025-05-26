@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flaskdemo
-        image: linuxgray039/test:6
+        image: linuxgray039/test:latest
         ports:
         - containerPort: 5000
 
