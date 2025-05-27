@@ -15,8 +15,8 @@ node {
                     // Print before update
                     sh "cat deployment.yaml"
                     
-                    // ✅ Update the image tag to 'latest'
-                    sh "sed -i 's+linuxgray039/test.*+linuxgray039/test:latest+g' deployment.yaml"
+                    sh "sed -i 's+linuxgray039/test.*+linuxgray039/test:${DOCKERTAG}+g' deployment.yaml"
+
                     
                     // Print after update
                     sh "cat deployment.yaml"
